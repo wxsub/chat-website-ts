@@ -28,7 +28,22 @@ docker-compose up --build -d
 docker-compose exec webapp-page /bin/bash
 
 pnpm install
-pnpm run dev
+pnpm run dev  
+```
+目前可用源：
+```
+{
+  "builder": {
+    "gc": {
+      "defaultKeepStorage": "20GB",
+      "enabled": true
+    }
+  },
+  "experimental": false,
+  "registry-mirrors": [
+    "https://dockerpull.org/"
+  ]
+}
 ```
 
 [演示地址](https://wxsub.github.io/vite-element-template/)
